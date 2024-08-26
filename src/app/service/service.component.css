@@ -1,0 +1,16 @@
+.abt-banner1{
+    background-image: url('../../assets/srv-md-1.f2b6cdf2b614c33b388d.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.abt-banner2{
+    background-image: url('../../assets/srv-md-2.310ef03c75ad1f83e20c.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+}

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/indi-go",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

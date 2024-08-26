@@ -1,0 +1,52 @@
+<app-page-section>
+    <h3 class="fw-bold text-light">Contact us</h3>
+    <p class="fw-normal">Home / Contact us</p>
+</app-page-section>
+
+<div class="container">
+    <div class="row p-5">
+        <div class="col-md-6">
+            <img src="../../assets/support.png" alt="" class="w-100">
+        </div>
+        <div class="col-md-6 p-4">
+            <form class="" #dataContact="ngForm" (ngSubmit)="contactForm(dataContact.value)">
+                <div class="row pt-3">
+                    <h3 class="fw-bold py-3">Contact Us</h3>
+                    <div class="col">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name" ngModel name="firstName" required>
+                    </div>
+                    <div class="col">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name" ngModel name="LastName" required>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <label for="contactView">Contact</label>
+                        <input type="text" class="form-control" placeholder="Enter contact" maxlength="10" ngModel name="contactView" required>
+                    </div>
+                    <div class="col">
+                        <label for="emailView">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Email" ngModel name="emailView" required>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                  <div class="col position-relative">
+                   <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter your Enquiry massege . . . " ngModel name="comment" required></textarea>
+                  </div>
+                </div> 
+                <button class="py-2 px-4 mt-3 border-0 shadow rounded btn-self" type="submit">Enquiry Submit</button>            
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="alert" *ngIf="thanksAlert">
+    <div class="myCard" id="remove">
+        <div class="card p-5">
+            <a (click)="display()"><i class="fa fa-times set-position" aria-hidden="true"></i></a>
+            <p class="alert-msg">Thanks For Contact with us,<br>We will contact you shortly.</p>
+        </div>
+    </div>
+</div>

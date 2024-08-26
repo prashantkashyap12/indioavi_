@@ -1,0 +1,27 @@
+*{
+    font-size: 15px;
+}
+ul{
+    list-style: none;
+}
+ul > li{
+    padding: 5px;
+}
+.nav-item {
+    color: #30336B;
+}
+.nav-item a:hover{
+    color: #2BD4D8;
+}
+.btn-self{
+    background-color: #30336b;
+    color: aliceblue;
+}
+.btn-self:hover{
+    background-color: #E32C86;
+
+}
+.main-active{
+    color: #2BD4D8;
+
+}

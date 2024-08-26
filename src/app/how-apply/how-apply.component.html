@@ -1,0 +1,153 @@
+<app-page-section>
+    <h3 class="fw-bold text-light">Job Application </h3>
+    <p class="fw-normal">Home / Recruiters Program</p>
+</app-page-section>
+
+<div class="p-0 py-4 py-md-3 p-md-5 bg-white">
+    <h4 class="text-center fw-bold text-decoration-underline py-4">JOB APPLICATION - NATIONAL</h4>
+    <form class="form-box" #applicationForm="ngForm" (ngSubmit)="ApplyForm(applicationForm)" >
+        <div class="p-4 my-3  rounded border border-2 bg-light">
+            <h5 class="py-3 fw-bold"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; Personal Information</h5>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input name="FirstName" ngModel placeholder="Enter First Name" type="text" class="input-text" required>
+                </div>
+                <div class="col-lg-6">
+                    <input name="LastName"  ngModel placeholder="Enter Last Name " type="email" class="input-text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input name="dob" ngModel placeholder="Date Of Birth" type="date" class="input-text" required>
+                </div>
+                <div class="col-lg-6">
+                    <input name="email" ngModel placeholder="Enter your Email ID" type="email" class="input-text" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input id="contact1" name="contact" ngModel placeholder="Enter Contact Number" type="contact1" class="input-text" maxlength="10" required>
+                </div>
+                <div class="col-lg-6">
+                    <input id="contact2" name="altranate_contact" ngModel  placeholder="Altranate Contact Number" type="contact2" class="input-text" maxlength="10" required>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-lg-12">
+                    <label for="AppyJob" class="pt-2">Job Apply For -</label>
+                    <select name="Job_post" ngModel id="AppyJob" class="form-control input-text" required>
+                        <option selected disabled>Select your Post</option>
+                        <option value="Airticket checking">Airticket checking</option>
+                        <option value="Airticket management">Airticket management</option>
+                        <option value="Airticket Exchange">Airticket Exchange</option>
+                        <option value="Cabin crew">Cabin crew</option>
+                        <option value="CSA costumer service">CSA costumer service</option>
+                        <option value="CSA enquiry department">CSA enquiry department</option>
+                        <option value="Food department">Food department</option>
+                        <option value="Computer operator">Computer operator</option>
+                        <option value="Floor management">Floor management</option>
+                        <option value="Technical Department Technician">Technical Department Technician</option>
+                        <option value="Machnical department">Machnical department</option>
+                        <option value="Loder staff">Loder staff</option>
+                        <option value="Cab service in Driver">Cab service in Driver</option>
+                        <option value="Security incharge">Security incharge</option>
+                        <option value="Airticket incharge">Airticket incharge</option>
+                        <option value="Luggage driving">Luggage driving</option>
+                        <option value="Luggage checking">Luggage checking</option>
+                        <option value="Food counting">Food counting</option>
+                        <option value="Helper department">Helper department</option>
+                        <option value="Airline Tickets agent">Airline Tickets agent</option>
+                        <option value="Flight Attendance">Flight Attendance</option>
+                        <option value="Senior Executive crew logistics">Senior Executive crew logistics</option>
+                        <option value="Voice airline process">Voice airline process</option>
+                        <option value="Airline supervisor">Airline supervisor</option>
+                        <option value="Executive cabin appearance">Executive cabin appearance</option>
+                        <option value="Assistent manager corporate secretarial">Assistent manager corporate secretarial</option>
+                        <option value="Assistent manager Human resources">Assistent manager Human resources</option>
+                        <option value="Executive crew services">Executive crew services</option>
+                        <option value="Executive or sr Executive accounts">Executive or sr Executive accounts</option>
+                        <option value="Airline Invoice processing">Airline Invoice processing</option>
+                        <option value="Manager communication">Manager communication</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 my-3 rounded border border-2 bg-light">
+            <div class="row">
+                <h5 class="py-3 fw-bold"><i class="fa fa-university" aria-hidden="true"></i>&nbsp; Enter Higher Qualification </h5>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="" class="fw-bold">Qualification</label>
+                            <input type="text" name="Qualification" ngModel placeholder="Enter Qualification" class="input-text">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="fw-bold">University / Board</label>
+                            <input type="text" name="University" ngModel placeholder="Enter University / Board" class="input-text">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="fw-bold">Year</label>
+                            <input type="text" name="Year" maxlength="4" ngModel placeholder="Enter Year" class="input-text">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="fw-bold">Percentage Marks</label>
+                            <input type="text" name="Percentage" maxlength="4" ngModel placeholder="Enter Percentage Marks" class="input-text">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="p-4 my-3 rounded border border-2 bg-light">
+            <div class="row">
+                <h5 class="py-3 fw-bold"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Address </h5>
+
+                <div class="col-md-12 col-lg-12">
+                    <input type="text" class="input-text" name="Address1" ngModel required placeholder="Enter your Address">
+                    <input type="text" class="input-text" name="Address2" ngModel required placeholder="Landmark (School / Temple / Thana / Post)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <input type="text" class="input-text" name="City" ngModel required placeholder="City">
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <input type="text" class="input-text"  name="State" ngModel required placeholder="State">
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <input type="number" class="input-text"  name="Pin" maxlength="6" ngModel required placeholder="Pin-code">
+                </div>
+            </div>
+        </div>
+        <div class="p-4 my-3 rounded border border-2 bg-light">
+            <div class="row">
+                <h5 class="py-3 fw-bold"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;Identity Information </h5>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input id="location" name="Joblocation"  placeholder="Desired job location" type="text" class="input-text" ngModel required>
+                    </div>
+                        <div class="col-lg-6">
+                        <input id="exp" name="Aadhar" placeholder="Enter Aadhar card" type="text" class="input-text" ngModel required>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="form-checkbox">
+           <input type="checkbox" id="check" [checked]="checkvalue" (click)="checkBox()" name="check" value="check" required>
+        
+        <label for="check"> &nbsp;You accept the terms of service and the privacy policy. <span class="text-danger px-2" *ngIf="btnActive">(Requried Check)</span></label>
+        </div>
+        <button [class.btn-self2]="btnActive" class="py-2 px-4 mt-3 border-0 shadow rounded btn-self" [disabled]="btnActive" type="submit"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; Application Submit</button>                           
+    </form>
+</div>
+
+
+
+<div class="data" id="idPop" *ngIf="ThanksAlert">
+    <div class="alert-box shadow">
+        <div class="card p-5">
+            <i class="fa fa-times-circle" (click)="PopHide()"  aria-hidden="true"></i>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, repellat!</p>
+        </div>
+    </div>
+</div>

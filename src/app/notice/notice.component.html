@@ -1,0 +1,96 @@
+<app-page-section>
+    <h3 class="fw-bold text-light">Notice Program</h3>
+    <p class="fw-normal">Home / Notice Program</p>
+</app-page-section>
+
+
+<section class="p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center pt-4 fw-bold ">Selection Report</h4>
+                <p class="text-center">2023 - 2024 </p>
+
+                <table class="table text-white text-center border table-bordered  my-5" style="background: linear-gradient(156deg, rgba(6,39,232,0.7763480392156863) 0%, rgba(44,224,217,1) 100%);">
+                    <thead class="bg-dark">
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Date</th>
+                            <th>Applicant Name</th>
+                            <th>contact</th>
+                            <th>Email</th>
+                            <th>Post</th>
+                            <th>Job Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of database;index as i">
+                            <td>{{i+68764 + "."}}</td>
+                            <td>{{data.dob}}</td>
+                            <td>{{data.name}}</td>
+                            <td>{{data.contact}}</td>
+                            <td>{{data.email}}</td>
+                            <td>{{data.Job_Profile}}</td>
+                            <td>{{data.J_loction}}</td>
+                            <td class="bg-secondary">{{data.status}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 p-5">
+            <h3 class="fw-bold py-3">!! सावधान !!</h3>
+            <p>सभी अभ्यर्थियों को सूचित किया जाता है कि कुछ कंपनियां भारतीय एविएशन सर्विसेज (बी ए एस ) से मिलता जुलता नाम, वेबसाइट, होमपेज व सामग्रियों का प्रयोग कर रही है | कृपया आप उससे दूर रहें अन्यथा भारतीय एविएशन सर्विसेस (बी ए एस ) की कोई जिम्मेदारी नहीं होगी | पूरे भारत में भारतीय एविएशन सर्विसेज (बी ए एस ) की कोई भी ब्रांच नहीं है | भारतीय एविएशन सर्विसेज (बी ए एस ) का रजिस्टर्ड ऑफिस इस पते पर है :-</p>
+            <b>Sahar-Andheri East C/O Chhatrapati Shivaji International Airpot, 2 C, Sahar-Andheri East, Andheri East, Mumbai </b>
+            <div class="contact p-2">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:7409852259" class="text-decoration-none text-dark">&nbsp; +91-7409852259</a>
+            </div>
+            <div class="contact p-2">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:18774862048" class="text-decoration-none text-dark">&nbsp; 1877-486-2048 (HelpLine) </a>
+            </div>
+            <div class="contact p-2">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a> recruiter@indigoavi.in</a>
+            </div>
+           
+        </div>
+
+        <hr>
+
+        <div class="col-12 p-5">
+            <h3 class="fw-bold py-3">!! CAUTION !!</h3>
+            <p>All the candidates are informed that some companies are using name, website, homepage and materials similar to IndiGoAvi Aviation Services (BAS). Please stay away from them, otherwise IndiGoAvi Aviation Services (BAS) will not have any responsibility. IndiGoAvi Aviation Services (BAS) does not have any branch in all over India. The registered office of IndiGoAvi Aviation Services (BAS) is at:-</p>
+            <b> Tower-C Mehrauli - Gurgaon Rd, Sikanderpur Sector 26, Gurgaon, Hariyana 122002 </b>
+            <div class="contact p-2">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:7409852259" class="text-decoration-none text-dark">&nbsp; +91-7409852259</a>
+            </div>
+            <div class="contact p-2">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:18774862048" class="text-decoration-none text-dark">&nbsp; 1877-486-2048 (HelpLine) </a>
+            </div>
+            <div class="contact p-2">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a> recruiter@indigoavi.in</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 bg-primary abt-banner1" >
+        </div>
+    </div>
+</div>
+

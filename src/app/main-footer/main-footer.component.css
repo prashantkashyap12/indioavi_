@@ -1,0 +1,37 @@
+*{
+    font-size: 15px;
+}
+.noti-icn{
+    list-style: disc;
+}
+ul{
+    list-style: none;
+}
+
+ul > li{
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: rgb(41,224,217);
+}
+
+ul > li > a > i {
+    color: aliceblue;
+
+}
+
+.live-notification{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../assets/maxresdefault.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.main-footer{
+    background-color: #003168;
+    color: aliceblue;
+}
